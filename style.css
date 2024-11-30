@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Wakanda Panther";
+  src: url("./fonts/WakandaPantherNmdVerRegular-DOMG1.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Parkinsans";
+}
+body {
+  background: url("images/vecteezy_abstract-technology-lines-and-dots-connection-background_8171878.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.container {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  background: url("images/NITJSR.png") no-repeat center center;
+}
+
+.heading {
+  padding-top: 100px;
+  font-size: 64px;
+  letter-spacing: 4px;
+  font-family: "Wakanda Panther";
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-section {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 28%;
+  transform: translateY(-50%);
+  padding: 14px;
+}
+
+.content {
+  margin-right: 40px;
+  animation-delay: 1sec;
+}
+
+.content h3 {
+  font-size: 24px;
+  margin: 14px;
+  margin-left: 0;
+}
+.content p {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.team-members {
+  margin-top: 30px;
+  animation-delay: 2sec;
+}
+/* .profile-image {
+  display: flex;
+} */
+
+.profile-images {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column; /* Stack image and name */
+  align-items: center; /* Center-align image and text */
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 14px;
+  padding: 4px;
+  background: #fff;
+  display: inline-block;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.profile-img:hover {
+  background: linear-gradient(45deg, red, blue, green, yellow);
+  transform: scale(1.2);
+}
+
+.get-stared {
+  padding: 15px;
+  margin-left: 15px;
+}
+.btn-start {
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: ;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-start:hover {
+  background-color: green;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.prof-img {
+  width: 70%;
+  margin-left: 45px;
+}
+.prof-text {
+  text-align: center;
+}
+/* Animation */
+.anim {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInSlide 2s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
